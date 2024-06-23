@@ -101,34 +101,34 @@
             this.transferToolStripMenuItem,
             this.fDFormToolStripMenuItem});
             this.işlemlerToolStripMenuItem.Name = "işlemlerToolStripMenuItem";
-            this.işlemlerToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.işlemlerToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
             this.işlemlerToolStripMenuItem.Text = "İşlemler";
             // 
             // paraEklemeToolStripMenuItem
             // 
             this.paraEklemeToolStripMenuItem.Name = "paraEklemeToolStripMenuItem";
-            this.paraEklemeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.paraEklemeToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.paraEklemeToolStripMenuItem.Text = "Para yatırma";
             this.paraEklemeToolStripMenuItem.Click += new System.EventHandler(this.paraEklemeToolStripMenuItem_Click);
             // 
             // paraÇekmeToolStripMenuItem
             // 
             this.paraÇekmeToolStripMenuItem.Name = "paraÇekmeToolStripMenuItem";
-            this.paraÇekmeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.paraÇekmeToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.paraÇekmeToolStripMenuItem.Text = "Para çekme";
             this.paraÇekmeToolStripMenuItem.Click += new System.EventHandler(this.paraÇekmeToolStripMenuItem_Click);
             // 
             // transferToolStripMenuItem
             // 
             this.transferToolStripMenuItem.Name = "transferToolStripMenuItem";
-            this.transferToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.transferToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.transferToolStripMenuItem.Text = "Transfer";
             this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
             // 
             // fDFormToolStripMenuItem
             // 
             this.fDFormToolStripMenuItem.Name = "fDFormToolStripMenuItem";
-            this.fDFormToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fDFormToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.fDFormToolStripMenuItem.Text = "Vade Formu";
             this.fDFormToolStripMenuItem.Click += new System.EventHandler(this.fDFormToolStripMenuItem_Click);
             // 
@@ -138,20 +138,20 @@
             this.bilançoToolStripMenuItem,
             this.fDGörüntüleToolStripMenuItem});
             this.görüntüleToolStripMenuItem.Name = "görüntüleToolStripMenuItem";
-            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.görüntüleToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
             this.görüntüleToolStripMenuItem.Text = "Görüntüle";
             // 
             // bilançoToolStripMenuItem
             // 
             this.bilançoToolStripMenuItem.Name = "bilançoToolStripMenuItem";
-            this.bilançoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bilançoToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.bilançoToolStripMenuItem.Text = "Bilanço";
             this.bilançoToolStripMenuItem.Click += new System.EventHandler(this.bilançoToolStripMenuItem_Click);
             // 
             // fDGörüntüleToolStripMenuItem
             // 
             this.fDGörüntüleToolStripMenuItem.Name = "fDGörüntüleToolStripMenuItem";
-            this.fDGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fDGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.fDGörüntüleToolStripMenuItem.Text = "Vade görüntüle";
             this.fDGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.fDGörüntüleToolStripMenuItem_Click);
             // 

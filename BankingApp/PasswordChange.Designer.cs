@@ -44,11 +44,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(344, 21);
+            this.label1.Location = new System.Drawing.Point(121, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 31);
+            this.label1.Size = new System.Drawing.Size(552, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Şifre veya Kullanıcı Adı Değiştirme Formu";
             // 
             // label2
             // 
@@ -83,7 +83,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(380, 426);
+            this.button1.Location = new System.Drawing.Point(379, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 47);
             this.button1.TabIndex = 4;

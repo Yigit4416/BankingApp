@@ -122,28 +122,28 @@
             // 
             this.accountnotext.Location = new System.Drawing.Point(221, 200);
             this.accountnotext.Name = "accountnotext";
-            this.accountnotext.Size = new System.Drawing.Size(280, 22);
+            this.accountnotext.Size = new System.Drawing.Size(281, 22);
             this.accountnotext.TabIndex = 7;
             // 
             // liratext
             // 
             this.liratext.Location = new System.Drawing.Point(221, 464);
             this.liratext.Name = "liratext";
-            this.liratext.Size = new System.Drawing.Size(280, 22);
+            this.liratext.Size = new System.Drawing.Size(281, 22);
             this.liratext.TabIndex = 8;
             // 
             // timetext
             // 
             this.timetext.Location = new System.Drawing.Point(221, 553);
             this.timetext.Name = "timetext";
-            this.timetext.Size = new System.Drawing.Size(280, 22);
+            this.timetext.Size = new System.Drawing.Size(281, 22);
             this.timetext.TabIndex = 9;
             // 
             // interesttext
             // 
             this.interesttext.Location = new System.Drawing.Point(221, 638);
             this.interesttext.Name = "interesttext";
-            this.interesttext.Size = new System.Drawing.Size(280, 22);
+            this.interesttext.Size = new System.Drawing.Size(281, 22);
             this.interesttext.TabIndex = 10;
             // 
             // comboBox1
@@ -151,7 +151,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(221, 374);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(280, 24);
+            this.comboBox1.Size = new System.Drawing.Size(281, 24);
             this.comboBox1.TabIndex = 11;
             // 
             // button1
@@ -179,7 +179,7 @@
             // 
             this.balancetext.Location = new System.Drawing.Point(221, 291);
             this.balancetext.Name = "balancetext";
-            this.balancetext.Size = new System.Drawing.Size(280, 22);
+            this.balancetext.Size = new System.Drawing.Size(281, 22);
             this.balancetext.TabIndex = 14;
             // 
             // getinfobutton
