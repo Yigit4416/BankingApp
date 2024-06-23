@@ -35,8 +35,16 @@ namespace BankingApp
             banking_dbEntities1 dbe = new banking_dbEntities1();
             decimal accno = Convert.ToDecimal(accnotext.Text);
             var item = (from i in dbe.userAccount where i.Account_No == accno select i).FirstOrDefault();
+            
+            if(item != null)
+            {
             nametext.Text = item.Name;
             balancetext.Text = Convert.ToString(item.Balance);
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir kullanıcı yok");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,7 +66,7 @@ namespace BankingApp
             var item = (from i in dbe.userAccount where i.Account_No == accno select i).FirstOrDefault();
             item.Balance -= Convert.ToDecimal(amounttext.Text);
             dbe.SaveChanges();
-            MessageBox.Show("Para çekildi");
+            MessageBox.Show("Para çekildi\n" + item.Account_No + " no'lu hesap nolu hesabın kalan bakiyesi: " + item.Balance);
         }
     }
 }

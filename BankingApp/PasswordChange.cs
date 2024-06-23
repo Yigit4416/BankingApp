@@ -26,6 +26,7 @@ namespace BankingApp
             if(usernametext.Text.Length > 0 )
             {
                 item.Username = usernametext.Text;
+                dbe.SaveChanges();
                 MessageBox.Show("Kullanıcı adı değiştirildi");
             }
             if(oldpasstext.Text == item.Password)

@@ -52,7 +52,7 @@ namespace BankingApp
                         select u).FirstOrDefault();
             item.Balance =  item.Balance + Convert.ToDecimal(addedAmount.Text);
             dbe.SaveChanges();
-            MessageBox.Show("Ekleme yapıldı");
+            MessageBox.Show("Ekleme yapıldı\n" + item.Account_No + "'lu hesabın yeni bakiyesi: " + item.Balance);
         }
 
         private void infoButton_Click(object sender, EventArgs e)
@@ -61,8 +61,15 @@ namespace BankingApp
             decimal b = Convert.ToDecimal(accnotext.Text);
             var item = (from u in dbe.userAccount where u.Account_No == b select u).FirstOrDefault();
 
+            if(item != null)
+            {
             nametext.Text = item.Name;
             balance.Text = Convert.ToString(item.Balance);
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir kullanıcı yok");
+            }
 
         }
     }

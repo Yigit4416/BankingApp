@@ -21,6 +21,9 @@ namespace BankingApp
         {
             banking_dbEntities1 dbe = new banking_dbEntities1();
             decimal accno = Convert.ToDecimal(accnotext.Text);
+            var item = (from i in dbe.userAccount where i.Account_No == accno select i).FirstOrDefault();
+            if(item != null )
+            {
             var withdraw = (from i in dbe.debit where i.AccountNo == accno  select i);
             dataGridView1.DataSource = withdraw.ToList();
 
@@ -29,6 +32,12 @@ namespace BankingApp
 
             var fd = (from i in dbe.FD where i.Account_No == accno select i);
             dataGridView3.DataSource = fd.ToList();
+            }
+
+            else
+            {
+                MessageBox.Show("Böyle bir kullanıcı yok");
+            }
         }
     }
 }

@@ -41,13 +41,18 @@
             this.interesttext = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.balancetext = new System.Windows.Forms.TextBox();
+            this.getinfobutton = new System.Windows.Forms.Button();
+            this.infoButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(26, 34);
+            this.label1.Location = new System.Drawing.Point(25, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 36);
             this.label1.TabIndex = 0;
@@ -57,7 +62,7 @@
             // 
             this.currentdatelbl.AutoSize = true;
             this.currentdatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.currentdatelbl.Location = new System.Drawing.Point(126, 34);
+            this.currentdatelbl.Location = new System.Drawing.Point(125, 101);
             this.currentdatelbl.Name = "currentdatelbl";
             this.currentdatelbl.Size = new System.Drawing.Size(83, 36);
             this.currentdatelbl.TabIndex = 1;
@@ -67,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(27, 126);
+            this.label2.Location = new System.Drawing.Point(26, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 29);
             this.label2.TabIndex = 2;
@@ -77,7 +82,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(27, 217);
+            this.label3.Location = new System.Drawing.Point(26, 369);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 29);
             this.label3.TabIndex = 3;
@@ -87,7 +92,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(27, 305);
+            this.label4.Location = new System.Drawing.Point(26, 457);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 29);
             this.label4.TabIndex = 4;
@@ -97,7 +102,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(27, 394);
+            this.label5.Location = new System.Drawing.Point(26, 546);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 29);
             this.label5.TabIndex = 5;
@@ -107,7 +112,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(27, 479);
+            this.label6.Location = new System.Drawing.Point(26, 631);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 29);
             this.label6.TabIndex = 6;
@@ -115,28 +120,28 @@
             // 
             // accountnotext
             // 
-            this.accountnotext.Location = new System.Drawing.Point(222, 133);
+            this.accountnotext.Location = new System.Drawing.Point(221, 200);
             this.accountnotext.Name = "accountnotext";
             this.accountnotext.Size = new System.Drawing.Size(280, 22);
             this.accountnotext.TabIndex = 7;
             // 
             // liratext
             // 
-            this.liratext.Location = new System.Drawing.Point(222, 312);
+            this.liratext.Location = new System.Drawing.Point(221, 464);
             this.liratext.Name = "liratext";
             this.liratext.Size = new System.Drawing.Size(280, 22);
             this.liratext.TabIndex = 8;
             // 
             // timetext
             // 
-            this.timetext.Location = new System.Drawing.Point(222, 401);
+            this.timetext.Location = new System.Drawing.Point(221, 553);
             this.timetext.Name = "timetext";
             this.timetext.Size = new System.Drawing.Size(280, 22);
             this.timetext.TabIndex = 9;
             // 
             // interesttext
             // 
-            this.interesttext.Location = new System.Drawing.Point(222, 486);
+            this.interesttext.Location = new System.Drawing.Point(221, 638);
             this.interesttext.Name = "interesttext";
             this.interesttext.Size = new System.Drawing.Size(280, 22);
             this.interesttext.TabIndex = 10;
@@ -144,7 +149,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(222, 222);
+            this.comboBox1.Location = new System.Drawing.Point(221, 374);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(280, 24);
             this.comboBox1.TabIndex = 11;
@@ -152,7 +157,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(222, 560);
+            this.button1.Location = new System.Drawing.Point(384, 705);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 46);
             this.button1.TabIndex = 12;
@@ -160,11 +165,65 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(26, 284);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 29);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Bakiye";
+            // 
+            // balancetext
+            // 
+            this.balancetext.Location = new System.Drawing.Point(221, 291);
+            this.balancetext.Name = "balancetext";
+            this.balancetext.Size = new System.Drawing.Size(280, 22);
+            this.balancetext.TabIndex = 14;
+            // 
+            // getinfobutton
+            // 
+            this.getinfobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.getinfobutton.Location = new System.Drawing.Point(221, 705);
+            this.getinfobutton.Name = "getinfobutton";
+            this.getinfobutton.Size = new System.Drawing.Size(117, 46);
+            this.getinfobutton.TabIndex = 15;
+            this.getinfobutton.Text = "Bilgi Al";
+            this.getinfobutton.UseVisualStyleBackColor = true;
+            this.getinfobutton.Click += new System.EventHandler(this.getinfobutton_Click);
+            // 
+            // infoButton
+            // 
+            this.infoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.infoButton.Location = new System.Drawing.Point(534, 187);
+            this.infoButton.Name = "infoButton";
+            this.infoButton.Size = new System.Drawing.Size(170, 46);
+            this.infoButton.TabIndex = 16;
+            this.infoButton.Text = "Hesap Bilgileri";
+            this.infoButton.UseVisualStyleBackColor = true;
+            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(377, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(234, 39);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Vade Yatırma";
+            // 
             // FDView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 769);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.infoButton);
+            this.Controls.Add(this.getinfobutton);
+            this.Controls.Add(this.balancetext);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.interesttext);
@@ -200,5 +259,10 @@
         private System.Windows.Forms.TextBox interesttext;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox balancetext;
+        private System.Windows.Forms.Button getinfobutton;
+        private System.Windows.Forms.Button infoButton;
+        private System.Windows.Forms.Label label8;
     }
 }

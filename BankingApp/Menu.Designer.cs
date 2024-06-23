@@ -37,14 +37,14 @@
             this.paraEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paraÇekmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fDFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.görüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bilançoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fDGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diğerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fDFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.şifreDeğiştirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +69,7 @@
             this.güncelleToolStripMenuItem,
             this.tümHesaplarToolStripMenuItem});
             this.yeniHesapToolStripMenuItem.Name = "yeniHesapToolStripMenuItem";
-            this.yeniHesapToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.yeniHesapToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.yeniHesapToolStripMenuItem.Text = "Hesap";
             // 
             // yeniHesapToolStripMenuItem1
@@ -108,7 +108,7 @@
             // 
             this.paraEklemeToolStripMenuItem.Name = "paraEklemeToolStripMenuItem";
             this.paraEklemeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.paraEklemeToolStripMenuItem.Text = "Para ekleme";
+            this.paraEklemeToolStripMenuItem.Text = "Para yatırma";
             this.paraEklemeToolStripMenuItem.Click += new System.EventHandler(this.paraEklemeToolStripMenuItem_Click);
             // 
             // paraÇekmeToolStripMenuItem
@@ -124,6 +124,13 @@
             this.transferToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.transferToolStripMenuItem.Text = "Transfer";
             this.transferToolStripMenuItem.Click += new System.EventHandler(this.transferToolStripMenuItem_Click);
+            // 
+            // fDFormToolStripMenuItem
+            // 
+            this.fDFormToolStripMenuItem.Name = "fDFormToolStripMenuItem";
+            this.fDFormToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fDFormToolStripMenuItem.Text = "Vade Formu";
+            this.fDFormToolStripMenuItem.Click += new System.EventHandler(this.fDFormToolStripMenuItem_Click);
             // 
             // görüntüleToolStripMenuItem
             // 
@@ -145,7 +152,7 @@
             // 
             this.fDGörüntüleToolStripMenuItem.Name = "fDGörüntüleToolStripMenuItem";
             this.fDGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.fDGörüntüleToolStripMenuItem.Text = "FD görüntüle";
+            this.fDGörüntüleToolStripMenuItem.Text = "Vade görüntüle";
             this.fDGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.fDGörüntüleToolStripMenuItem_Click);
             // 
             // diğerToolStripMenuItem
@@ -155,36 +162,29 @@
             this.şifreDeğiştirToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.diğerToolStripMenuItem.Name = "diğerToolStripMenuItem";
-            this.diğerToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.diğerToolStripMenuItem.Size = new System.Drawing.Size(60, 26);
             this.diğerToolStripMenuItem.Text = "Diğer";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.logoutToolStripMenuItem.Text = "Kullanıcı değiştir";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
-            // çıkışToolStripMenuItem
-            // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
-            // 
-            // fDFormToolStripMenuItem
-            // 
-            this.fDFormToolStripMenuItem.Name = "fDFormToolStripMenuItem";
-            this.fDFormToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.fDFormToolStripMenuItem.Text = "FD form";
-            this.fDFormToolStripMenuItem.Click += new System.EventHandler(this.fDFormToolStripMenuItem_Click);
             // 
             // şifreDeğiştirToolStripMenuItem
             // 
             this.şifreDeğiştirToolStripMenuItem.Name = "şifreDeğiştirToolStripMenuItem";
-            this.şifreDeğiştirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.şifreDeğiştirToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.şifreDeğiştirToolStripMenuItem.Text = "Şifre değiştir";
             this.şifreDeğiştirToolStripMenuItem.Click += new System.EventHandler(this.şifreDeğiştirToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // Menu
             // 
