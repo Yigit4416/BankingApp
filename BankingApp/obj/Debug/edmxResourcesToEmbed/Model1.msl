@@ -36,20 +36,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="employee">
-      <EntityTypeMapping TypeName="banking_dbModel.employee">
-        <MappingFragment StoreEntitySet="employee">
-          <ScalarProperty Name="user_id" ColumnName="user_id" />
-          <ScalarProperty Name="Emp_name" ColumnName="Emp_name" />
-          <ScalarProperty Name="Gender" ColumnName="Gender" />
-          <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="FD">
       <EntityTypeMapping TypeName="banking_dbModel.FD">
         <MappingFragment StoreEntitySet="FD">
@@ -94,15 +80,6 @@
           <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="District" ColumnName="District" />
           <ScalarProperty Name="State" ColumnName="State" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="userTable">
-      <EntityTypeMapping TypeName="banking_dbModel.userTable">
-        <MappingFragment StoreEntitySet="userTable">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

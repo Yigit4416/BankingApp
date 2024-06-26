@@ -65,6 +65,7 @@ namespace BankingApp
             pictureBox1.Image = Image.FromStream(ms);
             disttext.Text = item.District.ToString();
             statetext.Text = item.State.ToString();
+            dateTimePicker1.Value = DateTime.Parse(item.DOB);
             if(item.Gender == "Erkek")
             {
                 maleRadio.Checked = true;
@@ -115,12 +116,12 @@ namespace BankingApp
                 }
                 else
                 {
-                    MessageBox.Show("Account not found in the database.");
+                    MessageBox.Show("Hesap databasede bulunamadı.");
                 }
             }
             else
             {
-                MessageBox.Show("Please select a row to delete.");
+                MessageBox.Show("Lütfen silmek için bir kullanıcıyı seçin.");
             }
         }
 
@@ -166,7 +167,6 @@ namespace BankingApp
             UserAccount.DOB = dateTimePicker1.Value.ToString("dd/MM/yyyy");
             dbe.SaveChanges();
             MessageBox.Show("Bilgiler Güncellendi");
-            MessageBox.Show(UserAccount.DOB);
         }
     }
 }

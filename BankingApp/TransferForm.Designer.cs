@@ -107,10 +107,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.Location = new System.Drawing.Point(536, 197);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 53);
+            this.button1.Size = new System.Drawing.Size(198, 53);
             this.button1.TabIndex = 6;
             this.button1.Text = "Bilgileri Getir";
             this.button1.UseVisualStyleBackColor = true;

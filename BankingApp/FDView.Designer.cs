@@ -46,6 +46,10 @@
             this.getinfobutton = new System.Windows.Forms.Button();
             this.infoButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -104,9 +108,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(26, 546);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 29);
+            this.label5.Size = new System.Drawing.Size(169, 29);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Süre";
+            this.label5.Text = "Süre (Günlük)";
             // 
             // label6
             // 
@@ -214,11 +218,55 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Vade Yatırma";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(529, 283);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(463, 24);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Yatırılan para 1000 Lira\'nın altındaysa faiz %10 yapılmalı";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(530, 375);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(473, 24);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Yatırılan para 10000 Lira\'nın altındaysa faiz %20 yapılmalı";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(529, 463);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(483, 24);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Yatırılan para 100000 Lira\'nın altındaysa faiz %30 yapılmalı";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(530, 551);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(472, 24);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Yatırılan para 100000 Lira\'dan fazlaysa faiz %40 yapılmalı";
+            // 
             // FDView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1041, 769);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.getinfobutton);
@@ -264,5 +312,9 @@
         private System.Windows.Forms.Button getinfobutton;
         private System.Windows.Forms.Button infoButton;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

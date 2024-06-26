@@ -46,6 +46,10 @@ namespace BankingApp
                     MessageBox.Show("Şifreler uyuşmuyor");
                 }
             }
+            else
+            {
+                MessageBox.Show("Eski şifre hatalı");
+            }
         }
     }
 }

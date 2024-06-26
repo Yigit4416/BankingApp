@@ -156,7 +156,7 @@
             this.infoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.infoButton.Location = new System.Drawing.Point(669, 181);
             this.infoButton.Name = "infoButton";
-            this.infoButton.Size = new System.Drawing.Size(149, 63);
+            this.infoButton.Size = new System.Drawing.Size(189, 63);
             this.infoButton.TabIndex = 12;
             this.infoButton.Text = "Bilgileri Getir";
             this.infoButton.UseVisualStyleBackColor = true;

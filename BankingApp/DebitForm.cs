@@ -64,9 +64,19 @@ namespace BankingApp
 
             decimal accno = Convert.ToDecimal(accnotext.Text);
             var item = (from i in dbe.userAccount where i.Account_No == accno select i).FirstOrDefault();
-            item.Balance -= Convert.ToDecimal(amounttext.Text);
-            dbe.SaveChanges();
-            MessageBox.Show("Para çekildi\n" + item.Account_No + " no'lu hesap nolu hesabın kalan bakiyesi: " + item.Balance);
+            if(item != null)
+            {
+                if(item.Balance > Convert.ToDecimal(amounttext.Text))
+                {
+                    item.Balance -= Convert.ToDecimal(amounttext.Text);
+                    dbe.SaveChanges();
+                    MessageBox.Show("Para çekildi\n" + item.Account_No + " no'lu hesap nolu hesabın kalan bakiyesi: " + item.Balance);
+                }
+                else
+                {
+                    MessageBox.Show("Yeterli para yok.");
+                }
+            }
         }
     }
 }

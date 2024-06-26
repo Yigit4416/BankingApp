@@ -38,7 +38,7 @@ namespace BankingApp
                 }
                 else
                 {
-                    MessageBox.Show("Null değer var");
+                    MessageBox.Show("Kullanıcı adı hatalı");
                 }
             }
             else

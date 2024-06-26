@@ -37,19 +37,6 @@
           <Property Name="DipAmount" Type="decimal" Precision="18" Scale="0" />
           <Property Name="Date" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="employee">
-          <Key>
-            <PropertyRef Name="user_id" />
-          </Key>
-          <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Emp_name" Type="nchar" MaxLength="10" />
-          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
-          <Property Name="DateBirth" Type="nvarchar" MaxLength="50" />
-          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
-          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
-          <Property Name="Address" Type="nvarchar(max)" />
-          <Property Name="Password" Type="nvarchar" MaxLength="50" />
-        </EntityType>
         <EntityType Name="FD">
           <Key>
             <PropertyRef Name="sno" />
@@ -94,23 +81,13 @@
           <Property Name="District" Type="nvarchar" MaxLength="50" />
           <Property Name="State" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="userTable">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
-          <Property Name="Password" Type="nvarchar" MaxLength="50" />
-        </EntityType>
         <EntityContainer Name="banking_dbModelStoreContainer">
           <EntitySet Name="Admin_Table" EntityType="Self.Admin_Table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="debit" EntityType="Self.debit" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Deposit" EntityType="Self.Deposit" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FD" EntityType="Self.FD" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Transfer" EntityType="Self.Transfer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="userAccount" EntityType="Self.userAccount" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="userTable" EntityType="Self.userTable" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -148,19 +125,6 @@
           <Property Name="Mode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DipAmount" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="employee">
-          <Key>
-            <PropertyRef Name="user_id" />
-          </Key>
-          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Emp_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="DateBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="FD">
           <Key>
@@ -206,23 +170,13 @@
           <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityType Name="userTable">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityContainer Name="banking_dbEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admin_Table" EntityType="Self.Admin_Table" />
           <EntitySet Name="debit" EntityType="Self.debit" />
           <EntitySet Name="Deposit" EntityType="Self.Deposit" />
-          <EntitySet Name="employee" EntityType="Self.employee" />
           <EntitySet Name="FD" EntityType="Self.FD" />
           <EntitySet Name="Transfer" EntityType="Self.Transfer" />
           <EntitySet Name="userAccount" EntityType="Self.userAccount" />
-          <EntitySet Name="userTable" EntityType="Self.userTable" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -262,20 +216,6 @@
                 <ScalarProperty Name="Mode" ColumnName="Mode" />
                 <ScalarProperty Name="DipAmount" ColumnName="DipAmount" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="employee">
-            <EntityTypeMapping TypeName="banking_dbModel.employee">
-              <MappingFragment StoreEntitySet="employee">
-                <ScalarProperty Name="user_id" ColumnName="user_id" />
-                <ScalarProperty Name="Emp_name" ColumnName="Emp_name" />
-                <ScalarProperty Name="Gender" ColumnName="Gender" />
-                <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -323,15 +263,6 @@
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="District" ColumnName="District" />
                 <ScalarProperty Name="State" ColumnName="State" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="userTable">
-            <EntityTypeMapping TypeName="banking_dbModel.userTable">
-              <MappingFragment StoreEntitySet="userTable">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

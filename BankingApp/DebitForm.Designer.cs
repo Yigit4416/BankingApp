@@ -159,9 +159,9 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(511, 192);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 50);
+            this.button2.Size = new System.Drawing.Size(200, 50);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Detayları Al";
+            this.button2.Text = "Bilgileri Getir";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -179,9 +179,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.Location = new System.Drawing.Point(348, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(226, 39);
+            this.label7.Size = new System.Drawing.Size(216, 39);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Para Yatırma";
+            this.label7.Text = "Para Çekme";
             // 
             // DebitForm
             // 

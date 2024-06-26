@@ -67,11 +67,6 @@ namespace BankingApp
             fDGoruntule.Show();
         }
 
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void şifreDeğiştirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PasswordChange passwordChange = new PasswordChange();
@@ -96,6 +91,13 @@ namespace BankingApp
             FDView fDView = new FDView();
             fDView.MdiParent = this;
             fDView.Show();
+        }
+
+        private void transferGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TransferView transferView = new TransferView();
+            transferView.MdiParent = this;
+            transferView.Show();
         }
     }
 }

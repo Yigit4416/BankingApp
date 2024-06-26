@@ -32,19 +32,6 @@
     <Property Name="DipAmount" Type="decimal" Precision="18" Scale="0" />
     <Property Name="Date" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="employee">
-    <Key>
-      <PropertyRef Name="user_id" />
-    </Key>
-    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Emp_name" Type="nchar" MaxLength="10" />
-    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
-    <Property Name="DateBirth" Type="nvarchar" MaxLength="50" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
-    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
-    <Property Name="Address" Type="nvarchar(max)" />
-    <Property Name="Password" Type="nvarchar" MaxLength="50" />
-  </EntityType>
   <EntityType Name="FD">
     <Key>
       <PropertyRef Name="sno" />
@@ -89,22 +76,12 @@
     <Property Name="District" Type="nvarchar" MaxLength="50" />
     <Property Name="State" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="userTable">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
-    <Property Name="Password" Type="nvarchar" MaxLength="50" />
-  </EntityType>
   <EntityContainer Name="banking_dbModelStoreContainer">
     <EntitySet Name="Admin_Table" EntityType="Self.Admin_Table" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="debit" EntityType="Self.debit" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Deposit" EntityType="Self.Deposit" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FD" EntityType="Self.FD" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Transfer" EntityType="Self.Transfer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="userAccount" EntityType="Self.userAccount" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="userTable" EntityType="Self.userTable" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

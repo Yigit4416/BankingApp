@@ -32,19 +32,6 @@
     <Property Name="DipAmount" Type="Decimal" Precision="18" Scale="0" />
     <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityType Name="employee">
-    <Key>
-      <PropertyRef Name="user_id" />
-    </Key>
-    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Emp_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="DateBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="FD">
     <Key>
       <PropertyRef Name="sno" />
@@ -89,22 +76,12 @@
     <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityType Name="userTable">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityContainer Name="banking_dbEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admin_Table" EntityType="Self.Admin_Table" />
     <EntitySet Name="debit" EntityType="Self.debit" />
     <EntitySet Name="Deposit" EntityType="Self.Deposit" />
-    <EntitySet Name="employee" EntityType="Self.employee" />
     <EntitySet Name="FD" EntityType="Self.FD" />
     <EntitySet Name="Transfer" EntityType="Self.Transfer" />
     <EntitySet Name="userAccount" EntityType="Self.userAccount" />
-    <EntitySet Name="userTable" EntityType="Self.userTable" />
   </EntityContainer>
 </Schema>

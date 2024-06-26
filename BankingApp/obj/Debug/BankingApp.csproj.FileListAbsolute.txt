@@ -24,3 +24,4 @@ C:\Users\Dell\Desktop\BankingApp\BankingApp\obj\Debug\BankingApp.DebitForm.resou
 C:\Users\Dell\Desktop\BankingApp\BankingApp\obj\Debug\BankingApp.FDGoruntule.resources
 C:\Users\Dell\Desktop\BankingApp\BankingApp\obj\Debug\BankingApp.BalanceSheet.resources
 C:\Users\Dell\Desktop\BankingApp\BankingApp\obj\Debug\BankingApp.PasswordChange.resources
+C:\Users\Dell\Desktop\BankingApp\BankingApp\obj\Debug\BankingApp.TransferView.resources

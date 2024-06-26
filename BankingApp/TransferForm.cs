@@ -55,6 +55,8 @@ namespace BankingApp
                 if(totalBalance > amountSend)
                 {
                     var reciveritem = (from i in dbe.userAccount where i.Account_No == reciverAcc select i).FirstOrDefault();
+                    if(reciveritem != null)
+                    {
                     reciveritem.Balance += amountSend;
                     item.Balance -= amountSend;
                     Transfer transfer = new Transfer();
@@ -67,6 +69,11 @@ namespace BankingApp
                     dbe.Transfer.Add(transfer);
                     dbe.SaveChanges();
                     MessageBox.Show("Para gönderildi\n" + item.Account_No + " no'lu hesabın yeni bakiyesi: " + item.Balance);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Böyle bir alıcı hesap yok");
+                    }
                 }
                 else
                 {
@@ -75,7 +82,7 @@ namespace BankingApp
             }
             else
             {
-                MessageBox.Show("Böyle bir hesap yok");
+                MessageBox.Show("Böyle bir gönderici hesap yok");
             }
 
         }

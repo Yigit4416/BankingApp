@@ -33,6 +33,8 @@
             this.Account_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhoneNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.İl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.İlçe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -45,13 +47,15 @@
             this.Account_No,
             this.DOB,
             this.PhoneNo,
+            this.İl,
+            this.İlçe,
             this.Address,
             this.balance});
             this.dataGridView1.Location = new System.Drawing.Point(12, 121);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1087, 647);
+            this.dataGridView1.Size = new System.Drawing.Size(1289, 647);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -88,6 +92,22 @@
             this.PhoneNo.Name = "PhoneNo";
             this.PhoneNo.Width = 125;
             // 
+            // İl
+            // 
+            this.İl.DataPropertyName = "State";
+            this.İl.HeaderText = "İl";
+            this.İl.MinimumWidth = 6;
+            this.İl.Name = "İl";
+            this.İl.Width = 125;
+            // 
+            // İlçe
+            // 
+            this.İlçe.DataPropertyName = "District";
+            this.İlçe.HeaderText = "İlçe";
+            this.İlçe.MinimumWidth = 6;
+            this.İlçe.Name = "İlçe";
+            this.İlçe.Width = 125;
+            // 
             // Address
             // 
             this.Address.DataPropertyName = "Address";
@@ -108,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 780);
+            this.ClientSize = new System.Drawing.Size(1313, 780);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "AllAccounts";
@@ -126,6 +146,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Account_No;
         private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn İl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn İlçe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn balance;
     }

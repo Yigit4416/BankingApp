@@ -28,10 +28,8 @@ namespace BankingApp
         public virtual DbSet<Admin_Table> Admin_Table { get; set; }
         public virtual DbSet<debit> debit { get; set; }
         public virtual DbSet<Deposit> Deposit { get; set; }
-        public virtual DbSet<employee> employee { get; set; }
         public virtual DbSet<FD> FD { get; set; }
         public virtual DbSet<Transfer> Transfer { get; set; }
         public virtual DbSet<userAccount> userAccount { get; set; }
-        public virtual DbSet<userTable> userTable { get; set; }
     }
 }
