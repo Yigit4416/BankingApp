@@ -21,12 +21,12 @@ namespace BankingApp
         {
             banking_dbEntities1 dbe = new banking_dbEntities1();
 
-            if(usrtxt.Text != string.Empty ||passtxt.Text != string.Empty)
+            if (usrtxt.Text != string.Empty || passtxt.Text != string.Empty)
             {
                 var user1 = dbe.Admin_Table.FirstOrDefault(a => a.Username.Equals(usrtxt.Text));
-                if(user1 != null)
+                if (user1 != null)
                 {
-                    if(user1.Password.Equals(passtxt.Text))
+                    if (user1.Password.Equals(passtxt.Text))
                     {
                         Menu m1 = new Menu();
                         m1.ShowDialog();
@@ -38,7 +38,21 @@ namespace BankingApp
                 }
                 else
                 {
-                    MessageBox.Show("Kullanıcı adı hatalı");
+                    var user2 = dbe.Admin_Table.FirstOrDefault();
+                    if (user2 != null)
+                    {
+                        MessageBox.Show("Kullanıcı adı hatalı");
+                    }
+                    else
+                    {
+                        user2 = new Admin_Table // Yeni bir kullanıcı oluşturuyoruz
+                        {
+                            Username = usrtxt.Text,
+                            Password = passtxt.Text
+                        };
+                        dbe.Admin_Table.Add(user2);
+                        dbe.SaveChanges();
+                    }
                 }
             }
             else
